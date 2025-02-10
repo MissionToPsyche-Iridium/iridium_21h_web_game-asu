@@ -1,9 +1,9 @@
 ### iridium_21h_web_game-asu
 Project sponsor : Cassie Bowman
 
-Instructor : Xuanming Hu
+Instructor : Qi Lin
 
-Grader : Yonatan Rosenbloom
+Grader : Jagruth Arutla
 
 
 Team : 
