@@ -12,7 +12,7 @@ Team :
   * Elias Hilaneh, Computer Systems Engineering, ehilaneh@asu.edu
   * Andrew Rodriguez, Computer Systems Engineering, ajrodr54@asu.edu
 
-Taiga : https://tree.taiga.io/project/myung-cse-423485
+Taiga : https://tree.taiga.io/project/myung-asu-nasa-web-based-game-for-psyche/timeline
 
 
 
