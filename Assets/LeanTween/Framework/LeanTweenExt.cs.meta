@@ -1,20 +1,3 @@
-fileFormatVersion: 2
-guid: 5dbe851e9c0814f1d8f514ecf70f675d
-timeCreated: 1533842565
-licenseType: Store
-MonoImporter:
-  externalObjects: {}
-  serializedVersion: 2
-  defaultReferences: []
-  executionOrder: 0
-  icon: {instanceID: 0}
-  userData: 
-  assetBundleName: 
-  assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 3595
-  packageName: LeanTween
-  packageVersion: 2.51
-  assetPath: Assets/LeanTween/Framework/LeanTweenExt.cs
-  uploadId: 469983
+version https://git-lfs.github.com/spec/v1
+oid sha256:1fb79bda2e88066ec1935290c91134bfbcdbdb52d459267ae4f7e384799cea36
+size 463

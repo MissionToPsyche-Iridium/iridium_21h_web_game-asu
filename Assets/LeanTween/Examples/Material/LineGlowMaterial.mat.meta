@@ -1,9 +1,3 @@
-fileFormatVersion: 2
-guid: 658f4eba50cce41098da6ed347d8d270
-AssetOrigin:
-  serializedVersion: 1
-  productId: 3595
-  packageName: LeanTween
-  packageVersion: 2.51
-  assetPath: Assets/LeanTween/Examples/Material/LineGlowMaterial.mat
-  uploadId: 469983
+version https://git-lfs.github.com/spec/v1
+oid sha256:9997beef4754eb22e0399424aebd0163f81a352024411e0b2bf1ca4baec99cc7
+size 250

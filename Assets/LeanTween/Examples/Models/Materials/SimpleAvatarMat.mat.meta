@@ -1,9 +1,3 @@
-fileFormatVersion: 2
-guid: 5732f0a6e68964f3eb5c3ebb94242055
-AssetOrigin:
-  serializedVersion: 1
-  productId: 3595
-  packageName: LeanTween
-  packageVersion: 2.51
-  assetPath: Assets/LeanTween/Examples/Models/Materials/SimpleAvatarMat.mat
-  uploadId: 469983
+version https://git-lfs.github.com/spec/v1
+oid sha256:764e46003ce8c4e67993d6b4c628cb2366777f404106bbe57093524aee021c02
+size 257

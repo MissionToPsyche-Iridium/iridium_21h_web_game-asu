@@ -1,20 +1,3 @@
-fileFormatVersion: 2
-guid: d91eaf320032e4b1daa82aad9b7a98c5
-timeCreated: 1533566616
-licenseType: Store
-MonoImporter:
-  externalObjects: {}
-  serializedVersion: 2
-  defaultReferences: []
-  executionOrder: 0
-  icon: {instanceID: 0}
-  userData: 
-  assetBundleName: 
-  assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 3595
-  packageName: LeanTween
-  packageVersion: 2.51
-  assetPath: Assets/LeanTween/Testing/Scripts/LeanPool.cs
-  uploadId: 469983
+version https://git-lfs.github.com/spec/v1
+oid sha256:8e15b4313832e6269f3750a1d66d378d050ba0c3ee3a50c6f0d3b17faf6a9596
+size 465

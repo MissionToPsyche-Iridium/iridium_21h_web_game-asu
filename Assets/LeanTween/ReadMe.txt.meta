@@ -1,9 +1,3 @@
-fileFormatVersion: 2
-guid: f1e0da947b69648fdb1884d602088d92
-AssetOrigin:
-  serializedVersion: 1
-  productId: 3595
-  packageName: LeanTween
-  packageVersion: 2.51
-  assetPath: Assets/LeanTween/ReadMe.txt
-  uploadId: 469983
+version https://git-lfs.github.com/spec/v1
+oid sha256:01b5d58d0f1cb36c51a832822bae983566135082b199c911c86622479e826ba4
+size 222

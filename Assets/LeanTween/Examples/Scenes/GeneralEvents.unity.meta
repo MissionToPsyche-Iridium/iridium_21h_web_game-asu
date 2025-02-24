@@ -1,9 +1,3 @@
-fileFormatVersion: 2
-guid: 7e603302e334b4bd0bef351e0f1e050c
-AssetOrigin:
-  serializedVersion: 1
-  productId: 3595
-  packageName: LeanTween
-  packageVersion: 2.51
-  assetPath: Assets/LeanTween/Examples/Scenes/GeneralEvents.unity
-  uploadId: 469983
+version https://git-lfs.github.com/spec/v1
+oid sha256:53c2f4c835ef94fd3be00c8e5d463ceca103ff874b23a88d25d88b299602aedd
+size 247

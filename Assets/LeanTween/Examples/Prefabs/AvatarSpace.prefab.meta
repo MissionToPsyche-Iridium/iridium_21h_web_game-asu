@@ -1,17 +1,3 @@
-fileFormatVersion: 2
-guid: e02878730c48147bb9fc414aabee207b
-timeCreated: 1535222974
-licenseType: Store
-NativeFormatImporter:
-  externalObjects: {}
-  mainObjectFileID: 100100000
-  userData: 
-  assetBundleName: 
-  assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 3595
-  packageName: LeanTween
-  packageVersion: 2.51
-  assetPath: Assets/LeanTween/Examples/Prefabs/AvatarSpace.prefab
-  uploadId: 469983
+version https://git-lfs.github.com/spec/v1
+oid sha256:1d3c59e051646f92fe746037208af9c108c8260054cc78544bdd0ec9b17e70e7
+size 420

@@ -1,18 +1,3 @@
-using UnityEngine;
-using UnityEngine.UI;
-
-public class CongratScreen : MonoBehaviour{
-
-    public PlayerController Player;
-    public void Setup()
-    {
-        gameObject.SetActive(true);
-        Player?.DisableMovement();
-    }
-
-    public void Close()
-    {
-        gameObject.SetActive(false);
-        Player?.EnableMovement();
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:7a54849b52b6495add793b7309e672538a126abce47937094cadaa4107bd3d44
+size 358

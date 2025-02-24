@@ -1,9 +1,3 @@
-fileFormatVersion: 2
-guid: 992f36b41308f41f1bc39908c2c27dda
-AssetOrigin:
-  serializedVersion: 1
-  productId: 3595
-  packageName: LeanTween
-  packageVersion: 2.51
-  assetPath: Assets/LeanTween/Examples/Prefabs/AvatarDiffuse.prefab
-  uploadId: 469983
+version https://git-lfs.github.com/spec/v1
+oid sha256:8c7fb02249fc747881d321e5a8baa43d744af0b6ee0c48cca0b21f3804159491
+size 249

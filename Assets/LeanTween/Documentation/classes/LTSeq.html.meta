@@ -1,15 +1,3 @@
-fileFormatVersion: 2
-guid: c2208e3213ef84ee28cb1745e7eb9b26
-timeCreated: 1488755637
-licenseType: Store
-TextScriptImporter:
-  userData: 
-  assetBundleName: 
-  assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 3595
-  packageName: LeanTween
-  packageVersion: 2.51
-  assetPath: Assets/LeanTween/Documentation/classes/LTSeq.html
-  uploadId: 469983
+version https://git-lfs.github.com/spec/v1
+oid sha256:8e505e6dd01c02def1e8d426fd6faf0f113a3cbb49a7c3210315189e347f947f
+size 363

@@ -1,15 +1,3 @@
-fileFormatVersion: 2
-guid: 721616f4ed65645df9e1919c91909eb8
-timeCreated: 1471870210
-licenseType: Store
-DefaultImporter:
-  userData: 
-  assetBundleName: 
-  assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 3595
-  packageName: LeanTween
-  packageVersion: 2.51
-  assetPath: Assets/LeanTween/Examples/Scenes/GeneralEasingTypes.unity
-  uploadId: 469983
+version https://git-lfs.github.com/spec/v1
+oid sha256:e1cfa3b03be5c5c88e1984b25e2c6fb89f303bf72e01cc149fd2a37014103305
+size 368

@@ -1,14 +1,3 @@
-fileFormatVersion: 2
-guid: 47ee60abed1514dababc02a35d8293ea
-TextScriptImporter:
-  externalObjects: {}
-  userData: 
-  assetBundleName: 
-  assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 3595
-  packageName: LeanTween
-  packageVersion: 2.51
-  assetPath: Assets/Resources/BillingMode.json
-  uploadId: 469983
+version https://git-lfs.github.com/spec/v1
+oid sha256:49b05240404f2645c3cb406fd444379c21ff120a54ebb2085047ce2690fdfbb7
+size 326

@@ -1,15 +1,3 @@
-fileFormatVersion: 2
-guid: 3a6e1cb160a414c6cbe7d27b34d381a1
-timeCreated: 1488749437
-licenseType: Store
-NativeFormatImporter:
-  userData: 
-  assetBundleName: 
-  assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 3595
-  packageName: LeanTween
-  packageVersion: 2.51
-  assetPath: Assets/LeanTween/Examples/Prefabs/DustCloud.prefab
-  uploadId: 469983
+version https://git-lfs.github.com/spec/v1
+oid sha256:7c3ac938d38a562e12a568b473d5cd4cd06b39d4595eaac01e474d880825995f
+size 366

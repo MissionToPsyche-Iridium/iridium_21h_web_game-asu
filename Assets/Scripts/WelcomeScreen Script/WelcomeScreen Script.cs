@@ -1,24 +1,3 @@
-using UnityEngine;
-using UnityEngine.UI;
-
-public class WelcomeScreen : MonoBehaviour
-{
-    public PlayerController Player;
-
-    void Start()
-    {
-        // Since the screen is active by default, disable movement on start
-        Player?.DisableMovement();
-    }
-    public void Setup()
-    {
-        gameObject.SetActive(true);
-        Player?.DisableMovement();
-    }
-
-    public void Close()
-    {
-        gameObject.SetActive(false);
-        Player?.EnableMovement();
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:efd9d579eaae7e6cfc850fc06905f06f135fbc2e7e94b9d694204281e2516fe1
+size 505

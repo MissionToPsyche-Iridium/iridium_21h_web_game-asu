@@ -1,14 +1,3 @@
-fileFormatVersion: 2
-guid: 674f3c10d8880408e875a9e6c3ee83bb
-MonoImporter:
-  serializedVersion: 2
-  defaultReferences: []
-  executionOrder: 0
-  icon: {instanceID: 0}
-AssetOrigin:
-  serializedVersion: 1
-  productId: 3595
-  packageName: LeanTween
-  packageVersion: 2.51
-  assetPath: Assets/LeanTween/Examples/Scripts/LogoCinematic.cs
-  uploadId: 469983
+version https://git-lfs.github.com/spec/v1
+oid sha256:2b31f18e98c6b318f5ef2a601b1d34ac94f892587e88d3e9bc0adaf9bae3a672
+size 350

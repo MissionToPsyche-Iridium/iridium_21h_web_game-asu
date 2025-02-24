@@ -1,9 +1,3 @@
-fileFormatVersion: 2
-guid: f6cb897ad03b148b0b891659e4337604
-AssetOrigin:
-  serializedVersion: 1
-  productId: 3595
-  packageName: LeanTween
-  packageVersion: 2.51
-  assetPath: Assets/LeanTween/Examples/Models/LeanTween.prefab
-  uploadId: 469983
+version https://git-lfs.github.com/spec/v1
+oid sha256:6f4a6369940d3680c304295e60b081813f14b6ecafec03b7f1578165bf2fc79a
+size 244

@@ -1,16 +1,3 @@
-fileFormatVersion: 2
-guid: ae5e9d334639a484786a9badbf5b387a
-timeCreated: 1535208261
-licenseType: Store
-DefaultImporter:
-  externalObjects: {}
-  userData: 
-  assetBundleName: 
-  assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 3595
-  packageName: LeanTween
-  packageVersion: 2.51
-  assetPath: Assets/LeanTween/Examples/Scenes/Following.unity
-  uploadId: 469983
+version https://git-lfs.github.com/spec/v1
+oid sha256:1a162d2fc915ac05f254ae3b35257e094b37282990a18e013be60abf54d4c691
+size 381
