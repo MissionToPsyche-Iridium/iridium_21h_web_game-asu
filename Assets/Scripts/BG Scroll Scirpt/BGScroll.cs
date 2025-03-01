@@ -21,6 +21,10 @@ public class BGScroll : MonoBehaviour
     public CongratScreen CongratScreen;
     public Bar progressBar;
 
+    private bool isPaused = false;
+    private float pausedTimer;
+    private float pausedScrollTime;
+
     [Header("Asteroid Settings")]
     public GameObject asteroidPrefab;
     public float asteroidSpawnInterval = 5f;
@@ -34,6 +38,7 @@ public class BGScroll : MonoBehaviour
     private EdgeCollider2D edgeCollider;
     private float nextAsteroidSpawnTime;
     private GameObject currentAsteroid;
+
 
     void Awake()
     {
@@ -63,7 +68,7 @@ public class BGScroll : MonoBehaviour
 
     void Update()
     {
-        if (isScrolling)
+        if (isScrolling && !isPaused)
         {
             if (timer > 0)
             {
@@ -181,6 +186,25 @@ public class BGScroll : MonoBehaviour
         isScrolling = false;
         timer = 0;
         DestroyCurrentAsteroid();
+    }
+
+    public void PauseScrolling()
+    {
+        if (isScrolling && !isPaused)
+        {
+            isPaused = true;
+            pausedTimer = timer;
+            pausedScrollTime = Time.time;
+        }
+    }
+    public void ContinueScrolling()
+    {
+        if (isScrolling && isPaused)
+        {
+            isPaused = false;
+            float timeElapsedSincePause = Time.time - pausedScrollTime;
+            timer = pausedTimer - timeElapsedSincePause;
+        }
     }
 
     public void StartBtn()

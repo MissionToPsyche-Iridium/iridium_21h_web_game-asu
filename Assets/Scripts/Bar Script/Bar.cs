@@ -10,6 +10,7 @@ public class Bar : MonoBehaviour
     public BGScroll bgScroll;
     public TimerScript timerScript;
     private bool isProgressing = false;
+    private bool isPaused = false;
     private Coroutine progressCoroutine;
 
     void Start()
@@ -20,7 +21,7 @@ public class Bar : MonoBehaviour
 
     public void StartProgress()
     {
-        if (!isProgressing)
+        if (!isProgressing && !isPaused)
         {
             isProgressing = true;
             progressCoroutine = StartCoroutine(ProgressBar());
@@ -42,6 +43,25 @@ public class Bar : MonoBehaviour
         LeanTween.cancel(bar);
         bar.transform.localScale = new Vector3(0, bar.transform.localScale.y, bar.transform.localScale.z);
         isProgressing = false;
+        isPaused = false;
+    }
+
+    public void PauseProgress()
+    {
+        if (isProgressing && !isPaused)
+        {
+            isPaused = true;
+            StopProgress(); // Stop the coroutine
+        }
+    }
+
+    public void ContinueProgress()
+    {
+        if (isPaused)
+        {
+            isPaused = false;
+            StartProgress();
+        }
     }
 
     private System.Collections.IEnumerator ProgressBar()
