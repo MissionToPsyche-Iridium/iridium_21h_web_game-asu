@@ -4,8 +4,10 @@
 TagManager:
   serializedVersion: 3
   tags:
+  - Background
   - SineWave
   - Spacecraft
+  - UI
   layers:
   - Default
   - TransparentFX
@@ -42,6 +44,15 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: SineWave
+    uniqueID: 2896409685
+    locked: 0
+  - name: Spacecraft
+    uniqueID: 1978288485
+    locked: 0
+  - name: UI
+    uniqueID: 3197696215
     locked: 0
   m_RenderingLayers:
   - Default

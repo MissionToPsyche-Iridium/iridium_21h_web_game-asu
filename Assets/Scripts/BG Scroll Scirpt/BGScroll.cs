@@ -55,6 +55,9 @@ public class BGScroll : MonoBehaviour
         mesh_Render = GetComponent<MeshRenderer>();
         myLineRenderer = GetComponent<LineRenderer>();
 
+        myLineRenderer.sortingLayerName = "SineWave";
+        myLineRenderer.sortingOrder = 0;
+
         if (sineWaveColliderObject != null)
         {
             var existingPolygon = sineWaveColliderObject.GetComponent<PolygonCollider2D>();
