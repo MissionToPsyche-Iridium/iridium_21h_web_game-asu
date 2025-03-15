@@ -53,4 +53,10 @@ public class TimerScript : MonoBehaviour
         doOnce = true;
         uiText.text = timer.ToString("F"); // Keep current time visible
     }
+    public void ContinueTimer()
+    {
+        canCount = true;
+        doOnce = false;
+        // Resume from current timer value, no need to reset
+    }
 }

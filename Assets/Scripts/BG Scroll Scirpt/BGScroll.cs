@@ -27,7 +27,7 @@ public class BGScroll : MonoBehaviour
 
     [Header("Asteroid Settings")]
     public GameObject asteroidPrefab;
-    public float asteroidSpawnInterval = 5f;
+    public float asteroidSpawnInterval = 7f;
     public float asteroidSpeed = 5f;
     public float asteroidYOffset = 0.5f;
 
@@ -38,6 +38,16 @@ public class BGScroll : MonoBehaviour
     private EdgeCollider2D edgeCollider;
     private float nextAsteroidSpawnTime;
     private GameObject currentAsteroid;
+    private float timeOffset = 0f;
+
+    [Header("Asteroid Movement")]
+    public float asteroidRotationSpeed = 15f;  // Degrees per second
+    public float asteroidRotationVariation = 5f;  // Random variation
+    public float asteroidDriftAmplitude = 0.15f;  // How far it drifts from center
+    public float asteroidDriftFrequency = 0.5f;  // How quickly it drifts
+
+    private float currentAsteroidRotationSpeed;
+    private float asteroidTimeOffset;
 
 
     void Awake()
@@ -93,12 +103,14 @@ public class BGScroll : MonoBehaviour
         float yLength = yStart - yEnd;
         float spacing = yLength / (points - 1);
 
+        float timeValue = Time.timeSinceLevelLoad - timeOffset;
+
         for (int currentPoint = 0; currentPoint < points; currentPoint++)
         {
             float y = yStart - (currentPoint * spacing);
             float x = amplitude * Mathf.Sin(
                 (Tau * frequency * (y / yLength)) +
-                (Time.timeSinceLevelLoad * waveScrollSpeed)
+                (timeValue * waveScrollSpeed)
             );
             x = (x * width) / 2;
             myLineRenderer.SetPosition(currentPoint, new Vector3(x, y, 0));
@@ -139,26 +151,46 @@ public class BGScroll : MonoBehaviour
 
         Vector3 spawnPosition = new Vector3(0f, yStart, 0f);
         currentAsteroid = Instantiate(asteroidPrefab, spawnPosition, Quaternion.identity);
+
+        AsteroidCollision collisionScript = currentAsteroid.GetComponent<AsteroidCollision>();
+        if (collisionScript != null)
+        {
+            collisionScript.ResetCollisionState();
+        }
+
+        currentAsteroidRotationSpeed = asteroidRotationSpeed + Random.Range(-asteroidRotationVariation, asteroidRotationVariation); //creating random rotation speed and time offset
+        asteroidTimeOffset = Random.Range(0f, 100f);
     }
 
     void UpdateAsteroidPosition()
     {
         if (currentAsteroid == null) return;
 
+        //update Y position (main descent)
         float currentY = currentAsteroid.transform.position.y;
         currentY -= asteroidSpeed * Time.deltaTime;
 
+        //calculate the base X position from the sine wave
         float Tau = 2 * Mathf.PI;
         float yLength = yStart - yEnd;
-        float x = amplitude * Mathf.Sin(
+        float timeValue = Time.timeSinceLevelLoad - timeOffset;
+        float baseX = amplitude * Mathf.Sin(
             (Tau * frequency * ((currentY) / yLength)) +
-            (Time.timeSinceLevelLoad * waveScrollSpeed)
+            (timeValue * waveScrollSpeed)
         );
-        x = (x * width) / 2;
+        baseX = (baseX * width) / 2;
 
-        currentAsteroid.transform.position = new Vector3(x, currentY, 0f);
+        //add the drifting motion
+        float drift = Mathf.Sin((Time.time + asteroidTimeOffset) * asteroidDriftFrequency) * asteroidDriftAmplitude;
+        float finalX = baseX + drift;
 
-        // Remove the asteroid when it reaches the end of the sine wave
+        //update position
+        currentAsteroid.transform.position = new Vector3(finalX, currentY, 0f);
+
+        //apply rotation
+        currentAsteroid.transform.Rotate(Vector3.forward, currentAsteroidRotationSpeed * Time.deltaTime);
+
+        //remove the asteroid when it reaches the end of the sine wave
         if (currentY <= yEnd)
         {
             DestroyCurrentAsteroid();
@@ -202,8 +234,10 @@ public class BGScroll : MonoBehaviour
         if (isScrolling && isPaused)
         {
             isPaused = false;
-            float timeElapsedSincePause = Time.time - pausedScrollTime;
-            timer = pausedTimer - timeElapsedSincePause;
+            //float timeElapsedSincePause = Time.time - pausedScrollTime;
+            //timer = pausedTimer - timeElapsedSincePause;
+            timeOffset += (Time.time - pausedScrollTime);
+            timer = pausedTimer;
         }
     }
 
