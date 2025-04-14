@@ -1409,7 +1409,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Failure to grab the magnetic field line data by a set time means you lose!
+  m_text: Failure to grab the magnetic field line data by a set time means gameover!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6ed7b512349bf304ab8b6312696c58f4, type: 2}
   m_sharedMaterial: {fileID: 5858369754190416707, guid: 6ed7b512349bf304ab8b6312696c58f4, type: 2}
