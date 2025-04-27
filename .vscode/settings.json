@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Imager.sln"
+    "dotnet.defaultSolution": "iridium_21h_web_game-asu.sln"
 }
