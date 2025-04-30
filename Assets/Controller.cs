@@ -22,11 +22,11 @@ public class Controller : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     public float rotationSpeed = 5f; // Adjust rotation speed
     private Vector3 lastMousePosition; // Tracks the mouse position
     private bool objectSelected = false;
-    private bool cameraOn = false;
     private bool restorePsyche = false;
     private bool restoreCamera = false;
     private int taskTracker = 0;
     public GameObject cameraTarget;
+    bool UIActive = false;
 
     void Start()
     {
@@ -48,14 +48,12 @@ public class Controller : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         {
             // Toggle the active state
             cameraTarget.SetActive(!cameraTarget.activeSelf);
-            if (cameraTarget.activeSelf)
-                cameraOn = true;
         }
 
         if (Input.GetKeyDown(KeyCode.X))
         {
             // only check the picture if the camera is on
-            if (cameraOn)
+            if (cameraTarget.activeSelf)
                 checkPicture();
         }
     }
@@ -218,6 +216,7 @@ public class Controller : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
                 //utilityCanvas.interactable(false);
                 cameraTarget.SetActive(false);
                 task2TryAgain.SetActive(true);
+                UIActive = true;
             }
         }
         else if (taskTracker == 2)

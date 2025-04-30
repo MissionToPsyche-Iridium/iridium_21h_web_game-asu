@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "CSE-423-485-MainMenu.sln"
+    "dotnet.defaultSolution": "iridium_21h_web_game-asu.sln"
 }
