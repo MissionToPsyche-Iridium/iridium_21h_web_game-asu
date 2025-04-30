@@ -3,6 +3,7 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using TMPro;
 using System;
+using UnityEngine.SceneManagement;
 
 public class Controller : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 {
@@ -256,7 +257,9 @@ public class Controller : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     {
         if (yes)
         {
-            if (color_model2.activeSelf)
+            SceneManager.LoadScene("MainMenu");
+
+            /*if (color_model2.activeSelf)
                 restorePsyche = true;
 
             if (cameraTarget.activeSelf)
@@ -267,7 +270,7 @@ public class Controller : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
             home.enabled = false;
             reset.enabled = false;
             returnHome.SetActive(true);
-        }
+        */}
         else 
         {
             if (restorePsyche)
