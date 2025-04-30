@@ -14,10 +14,6 @@ Team :
 
 Taiga : https://tree.taiga.io/project/myung-asu-nasa-web-based-game-for-psyche/timeline
 
-
-
-
-
 **Project Executive Summary** 
 
 
